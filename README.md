@@ -1,6 +1,6 @@
 This Python script creates a PyQt-based GUI application that monitors system network activity and provides details about active processes using `psutil`. Here's a breakdown of the code, restructured for clarity and better understanding:
 
-To install `psutil`, `metapole`, and `pyqt5`, follow these steps:
+To install `psutil`, `metaplot`, and `pyqt5`, follow these steps:
 
 ### 1. **Open Command Prompt or Terminal**
    Ensure you have Python and `pip` installed. If not, install Python from [python.org](https://www.python.org/downloads/) and make sure to add it to your system's PATH during installation.
@@ -13,18 +13,18 @@ To install `psutil`, `metapole`, and `pyqt5`, follow these steps:
    pip install psutil
    ```
 
-### 3. **Install metapole**
+### 3. **Install metaplot**
 
-To install `metapole`, run the following command. This library may not be as commonly available as others, so ensure it is available in the `pip` repositories or from GitHub. If it's not found in `pip`, you may need to download it manually or clone the GitHub repository.
+To install `metaplot`, run the following command. This library may not be as commonly available as others, so ensure it is available in the `pip` repositories or from GitHub. If it's not found in `pip`, you may need to download it manually or clone the GitHub repository.
 
    ```bash
-   pip install metapole
+   pip install metaplot
    ```
 
    If it’s not found, search for the repository or try the exact package name or URL:
 
    ```bash
-   pip install git+https://github.com/username/metapole.git
+   pip install git+https://github.com/username/metaplot.git
    ```
 
 ### 4. **Install PyQt5**
@@ -42,7 +42,7 @@ After installation, you can check if the packages are installed correctly by ope
 ```python
 import psutil
 import PyQt5
-import metapole  # If installed successfully
+import metaplot  # If installed successfully
 ```
 
 If there are no errors, the packages have been installed successfully.
