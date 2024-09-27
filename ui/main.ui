@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1023</width>
+    <height>574</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Network Monitoring System Dashboard</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #ecf0f1;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <widget class="QWidget" name="page">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,2">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,1">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>Interfaces</string>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: #3498db; font-weight: bold;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QListWidget" name="listWidget">
+             <property name="toolTip">
+              <string>List of interfaces currently active</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: #ecf0f1; border: 1px solid #bdc3c7;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QListWidget" name="listWidget_2">
+             <property name="toolTip">
+              <string>Other network-related processes</string>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: #ecf0f1; border: 1px solid #bdc3c7;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QListWidget" name="listWidget_3">
+           <property name="toolTip">
+            <string>Interface Logs</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: #ecf0f1; border: 1px solid #bdc3c7;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QScrollArea" name="scrollArea">
+           <property name="widgetResizable">
+            <bool>true</bool>
+           </property>
+           <widget class="QWidget" name="scrollAreaWidgetContents">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>437</width>
+              <height>367</height>
+             </rect>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <layout class="QGridLayout" name="gridLayout">
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_currentConnections">
+                 <property name="text">
+                  <string>Current Connections:</string>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: #2ecc71; font-weight: bold;</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_activeTraffic">
+                 <property name="text">
+                  <string>Active Traffic:</string>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: #e74c3c; font-weight: bold;</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="label_alerts">
+                 <property name="text">
+                  <string>Alerts:</string>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: #f1c40f; font-weight: bold;</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_2"/>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="toolTip">
+      <string>Details of network processes and connections</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #ecf0f1; border: 1px solid #bdc3c7;</string>
+     </property>
+     <column>
+      <property name="text">
+       <string>Process name</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Fd</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Family</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Type</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Local addr</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Remote addr</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Status</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+  <zorder>tableWidget</zorder>
+  <zorder>stackedWidget</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
